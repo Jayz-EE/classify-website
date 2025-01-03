@@ -1,0 +1,156 @@
+@use './variables' as *;
+
+#blog {
+  font-size: 1.8rem;
+  white-space: pre-wrap;
+  p {
+    line-height: 180%;
+  }
+}
+// landing
+#landingBlog {
+  height: 70vh;
+  background: url("../assets/images/blogBG.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+  .landingBlog {
+    background-color: rgba($color: $secondary, $alpha: 0.8);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      color: $accent-light;
+      font-size: 2em;
+      font-weight: 700;
+    }
+  }
+}
+
+#blogContent {
+  margin-bottom: 3rem;
+
+  /* BlogCard Styles */
+  .blog-card {
+    padding: 10px;
+    border-top: solid 2px #026488;
+  }
+
+  /* Responsive Font Sizes */
+  .card-title {
+    font-size: clamp(1.25rem, 2.5vw, 2rem); /* Adjusts between 20px and 32px */
+    font-weight: bold;
+    color: #026488;
+  }
+
+  .card-text {
+    font-size: clamp(1rem, 2vw, 1.25rem); /* Adjusts between 16px and 20px */
+    color: #026488;
+  }
+
+  .btn-primary {
+    font-size: clamp(0.875rem, 1.5vw, 1rem); /* Adjusts between 14px and 16px */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  /* Interactive Button */
+  .btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+
+  .btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+  }
+
+  .btn-primary:active {
+    background-color: #004085;
+    transform: scale(0.95);
+  }
+
+  /* Responsive Image */
+  .img-fluid {
+    width: 100%;
+    height: auto; /* Ensures the image scales proportionally */
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .blog-card {
+      flex-direction: column;
+    }
+
+    .col-md-8,
+    .col-md-4 {
+      width: 100%;
+    }
+
+    .card-body {
+      text-align: center; /* Centers text for smaller screens */
+    }
+  }
+}
+
+.modal-content {
+  background: #e5eff3 !important;
+
+  .modal-body {
+    h1 {
+      font-size: clamp(1.5em, 3vw, 1.8em); /* Responsive font size for headers */
+      font-weight: 700;
+      color: #f1750e;
+      padding: 2rem 0 0.5em;
+      text-align: center;
+    }
+
+    p {
+      line-height: 180%;
+      padding: 0.5em 0;
+      font-family: Montserrat, sans-serif;
+      color: #004085;
+      font-size: clamp(1rem, 2vw, 1.1rem); /* Responsive font size for paragraphs */
+      text-align: justify;
+    }
+
+    li {
+      font-family: Montserrat, sans-serif;
+      color: #004085;
+      font-size: clamp(1rem, 2.5vw, 1.2rem); /* Responsive font size for list items */
+    }
+
+    h2 {
+      font-size: clamp(1.2em, 2.5vw, 1.4em); /* Responsive font size for subheadings */
+      font-weight: 700;
+      color: #f1750e;
+      padding: 2rem 0 0.5em;
+    }
+  }
+}
+
+.blog {
+  padding: 0 !important;
+  .modal-img {
+    height: 50px;
+  }
+}
+
+figure {
+  width: 100%;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

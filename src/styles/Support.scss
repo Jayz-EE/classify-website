@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.support-hero {
+    background: url('../assets/images/quoteBG.png') no-repeat center center;
+    background-size: cover;
+    min-height: 60vh;
+    background-position: 50% 20%;
+    background-attachment: fixed;
+}
+
+.support-hero-overlay {
+    background: #014a65a9;
+    min-height: 60vh;
+    height: 100%;
+    width: 60%;
+}
+
+@media (max-width: 1100px) {
+    .support-hero {
+        background-position: 70%;
+    }
+    .support-hero-overlay {
+        background: #014a65a2;
+        width: 100%;
+    }
+    .support-hero-content {
+        h1 {
+            color: azure;
+            font-weight: 700;
+            font-family: "Lora", serif;
+            text-align: center;
+        }
+    }
+}
+
+.support-hero-content {
+    h1 {
+        color: azure;
+        font-weight: 700;
+        font-family: "Lora", serif;
+    }
+}

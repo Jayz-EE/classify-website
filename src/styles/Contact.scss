@@ -1,0 +1,104 @@
+@use './variables' as *;
+
+#contact {
+  font-size: clamp(1rem, 1.3vw, 1.3rem);
+  white-space: pre-wrap;
+  p {
+    line-height: 180%;
+  }
+}
+
+// landing
+#landingContact {
+  background: url("../assets/images/quoteBG.png") no-repeat center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  .contentContainer {
+    background-color: rgba($color: $secondary, $alpha: 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #cdf1fe;
+    padding: clamp(5em, 10vw, 15em) 0 clamp(3em, 5vw, 10em);
+
+    h1 {
+      font-size: clamp(1.5rem, 3vw, 1.8em);
+      font-weight: 700;
+      color: $accent-light;
+      padding-bottom: 2em;
+    }
+    h2 {
+      font-size: clamp(1.2rem, 2.5vw, 1.4em);
+      font-weight: 700;
+      color: $accent-light;
+      padding-bottom: 1em;
+    }
+
+    .contactContainer {
+      padding-bottom: 3em;
+
+      .iconContainer {
+        display: flex;
+        align-items: center;
+        padding-bottom: 1em;
+
+        span {
+          color: $accent-light;
+          font-size: clamp(1.5rem, 3vw, 2em);
+          padding-right: 0.5em;
+        }
+
+        p {
+          margin: 0;
+          font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+        }
+      }
+    }
+
+    .formContainer {
+      ::placeholder {
+        color: #cdf1fe;
+      }
+
+      input:focus,
+      textarea:focus,
+      select:focus {
+        outline: none !important;
+      }
+
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      .row {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .form-control {
+        font-size: clamp(0.9rem, 1.2vw, 1em);
+        padding: 0.5em;
+        background-color: rgba($color: #000000, $alpha: 0);
+        border: none;
+        border-bottom: 2px solid $accent-light;
+        border-radius: 0;
+        color: #cdf1fe;
+        margin-bottom: 2em;
+      }
+    }
+
+    .btn {
+      @extend %callToAction;
+      font-size: clamp(1rem, 1.5vw, 1.2rem);
+    }
+  }
+}

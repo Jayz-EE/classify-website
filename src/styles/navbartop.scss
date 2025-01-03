@@ -1,0 +1,31 @@
+@use './variables.scss';
+
+#logo {
+    width: 250px;
+}
+
+.navbar-nav .nav-link {
+    color: #026488;
+    font-size: medium;
+}
+
+.navbar.navbar-main {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f1750e;
+}
+
+.navbar-nav .nav-link.fw-bold.active {
+    color: #f1750e;
+}
+
+@media screen and (min-width: 700px) {
+    .navbar.navbar-main {
+        width: 100%;
+    }    
+}
+

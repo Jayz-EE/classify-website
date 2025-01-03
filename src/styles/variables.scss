@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$primary: #026488;
+$secondary: #014a65;
+$tertiary: #011842;
+$accent: #f1750e;
+$accent-light: #ff934e;
+$lights: #cdf1fe; 
+$font-stack: Times, sans-serif;
+
+@font-face {
+    font-family: "Nulshock";
+    src: local("Nulshock"),
+      url("../assets/fonts/nulshock-bd.ttf") format("truetype");
+    font-weight: bold;
+}
+  
+%callToAction {
+  background-color: $accent;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.4rem;
+  padding: 10px 30px;
+  border-radius: 5rem;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: $accent-light;
+    transform: scale(1.05);
+  }
+}
+
+%title {
+  font-size: 2em;
+  font-weight: 700;
+  color: $accent;
+}

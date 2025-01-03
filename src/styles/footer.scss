@@ -1,0 +1,75 @@
+@use './variables' as *;
+
+#footer {
+  font-size: 1rem;
+  .demo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5em;
+    color: $lights;
+    background-color: $secondary;
+
+    h1 {
+      font-size: 3em;
+      font-weight: 700;
+      padding-bottom: 1.8rem;
+    }
+
+    @media (max-width: 700px) {
+      h1 {
+        font-size: 2em;
+      }
+    }
+
+    .socmed {
+      padding-bottom: 2.7rem;
+      a {
+        color: $accent-light;
+        font-size: 3rem;
+        margin: 0 1rem;
+        transition: all 0.3s ease;
+        &:hover {
+          color: $accent;
+        }
+      }
+    }
+    .btn {
+      @extend %callToAction;
+    }
+  }
+  .footer {
+    padding: 8em 0 2em;
+    .footerContent,
+    .footerLogo {
+      display: flex;
+      justify-content: center;
+    }
+    .footerLogo {
+      align-items: flex-start;
+    }
+    .footerSign {
+      padding-top: 8em;
+      color: rgba($color: $secondary, $alpha: 0.5);
+    }
+    h2 {
+      font-size: 1.5em;
+      font-weight: 700;
+      padding-bottom: 0.3em;
+      color: $primary;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      color: $secondary;
+      line-height: 180%;
+      font-size: 1.2rem;
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+}
+
