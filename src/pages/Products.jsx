@@ -13,19 +13,7 @@ import EmpoweringComponent from "../components/empowering_section.jsx";
 
 export default function Products() {
     const [activeTab, setActiveTab] = useState("admission");
-    const location = useLocation();
-
-    useEffect(() => {
-        // Check if there's a hash in the URL
-        const hash = location.hash;
-        if (hash) {
-            const section = document.getElementById(hash.slice(1));
-            if (section) {
-                section.scrollIntoView({ behavior: "smooth" });
-            }
-        }
-    }, [location]);
-
+    
     const tabContent = {
         admission: {
             title: ["Paperless Admission"],
@@ -146,7 +134,7 @@ export default function Products() {
             </div>
 
             {/* Tab Section */}
-            <div className="lms-tabs-section d-flex justify-content-center container-fluid">
+            <div className="lms-tabs-section justify-content-center container-fluid">
                 <div className="col-md-1 col-lg-1 col-xl-1 col-sm-12 col-xs-12 icons-container">
                     {Object.keys(tabContent).map((tabKey, index) => (
                         <div

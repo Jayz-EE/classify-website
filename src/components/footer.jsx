@@ -65,7 +65,7 @@ const Footer = ({ scrollTop }) => {
                   <FaEnvelopeSquare />
                 </a>
               </div>
-              <Link to="/contact" className="btn fs-5 p-4" onClick={scrollTop}>
+              <Link to="/contact" className="btn fs-5 p-4" onClick={scrollToTop}>
                 Let's Connect!
               </Link>
             </div>

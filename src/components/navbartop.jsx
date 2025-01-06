@@ -68,9 +68,7 @@ export default function NavBarTop() {
                             Classify Support
                         </Link>
                     </Nav>
-                    <Button className="fw-bold d-none d-md-none d-lg-none d-xl-block">
-                        Book a Free Demo
-                    </Button>
+                    <Link className="btn btn-primary fw-bold d-none d-md-none d-lg-none d-xl-block" to="/Contact" onClick={scrollToTop}>Book a Free Demo</Link>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

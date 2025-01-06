@@ -25,16 +25,14 @@ export default function About(){
                 </Container>
             </div>
             <div className="about-mission-vision">
-                <div className="container">
-                    <div className="d-flex flex-column align-items-center">
-                        <h2 className="text-center">Our Mission & Vision</h2>
-                        <p className="text-center">
-                            We leverage cost-efficient and cutting-edge technology to revolutionize learning and development in the Philippines.
-                        </p>
-                        <div className="mission-vision">
-                            <div className="mission-vission-overlay">
-                                <p>Classify inc. is a diverse software platform that aims to improve e-learning by introducing enhanced cloud-based solutions and embodying upgraded features that facilitate online educational advancements.</p>
-                            </div>
+                <div className="about-mission-container row d-flex flex-column align-items-center">
+                    <div className="mission-vision p-0 w-100"> 
+                        <div className="mission-vission-overlay flex-column align-items-center">
+                            <h2 className="text-center col-12">Our Mission & Vision</h2>
+                            <p className="text-center">
+                                We leverage cost-efficient and cutting-edge technology to revolutionize learning and development in the Philippines.
+                            </p>
+                            <p className="about-content">Classify inc. is a diverse software platform that aims to improve e-learning by introducing enhanced cloud-based solutions and embodying upgraded features that facilitate online educational advancements.</p>
                         </div>
                     </div>
                 </div>

@@ -63,8 +63,16 @@
         }
     }
 
+    @media (max-width: 400px) {
+        #tech_support {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
     .text-title {
-        font-size: 3.5rem;
+        font-size: clamp(2rem, 3vw, 3.5rem);
         font-weight: 700;
         display: flex;
         flex-direction: column;
@@ -212,7 +220,7 @@
 }
 
 .card-container p {
-    font-size: 1.2em;
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
     margin-bottom: 1em;
     color: #cdf1fe;
     font-family: Montserrat, sans-serif;
@@ -300,12 +308,16 @@
 }
 
 .empowering-card-body p {
-    font-size: 1.2em;
+    font-size: clamp(1rem, 1.15rem + 1vw, 1.3rem);
     margin-bottom: 1em;
     color: #0f3847;
     font-family: Montserrat, sans-serif;
     line-height: 160%;
     font-weight: 600;
+
+    @media (max-width: 400px) {
+        text-align: left;
+    }
 }
 
 .empowering-card-list {
@@ -515,7 +527,7 @@
     }
 
     .ads-title {
-        font-size: 3rem;
+        font-size: clamp(1.5rem, 2.5vw, 3rem);
         font-family: "Lora", serif;
         color: azure;
     }
@@ -528,7 +540,7 @@
     ul li::before {
         content: "➤";
         color: azure;
-        font-size: 0.8em;
+        font-size: clamp(1rem, 1.1vw, 1.3rem);
         margin-right: 8px;
         text-shadow: 
             1px 2px 0px #000000, 
@@ -538,7 +550,7 @@
     
     ul li {
         color: #cdf1fe;
-        font-size: 1.5rem;
+        font-size: clamp(1rem, 2vw, 1.5rem);
     }
 
     .lms-button {

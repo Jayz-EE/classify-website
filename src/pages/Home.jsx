@@ -117,7 +117,7 @@ export default function LandingHome({ scrollTop }) {
           <div className="container d-flex flex-column justify-content-center">
             <h1 className="tools-section-title">Best Services for <span style={{color: '#f1750e'}}>Visual Perfection</span></h1>
             <div className="row justify-content-center">
-                <div className="col-md-4 col-6">
+                <div className="col-md-4 col-12 col-lg-6 col-xl-6">
                   <div className="figContainer">
                     <img
                       src={Images.Strategy}
@@ -127,7 +127,7 @@ export default function LandingHome({ scrollTop }) {
                     <h2>Strategy</h2>
                   </div>
                 </div>
-                <div className="col-md-4 col-6">
+                <div className="col-md-4 col-12 col-lg-6 col-xl-6">
                   <div className="figContainer">
                     <img
                       src={Images.Marketing}
@@ -137,7 +137,7 @@ export default function LandingHome({ scrollTop }) {
                     <h2>Marketing</h2>
                   </div>
                 </div>
-                <div className="col-md-4 col-6">
+                <div className="col-md-4 col-12 col-lg-6 col-xl-6">
                   <div className="figContainer">
                     <img
                       src={Images.Tech}
@@ -147,7 +147,7 @@ export default function LandingHome({ scrollTop }) {
                     <h2>Technology</h2>
                   </div>
                 </div>
-                <div className="col-md-4 col-6">
+                <div className="col-md-4 col-12 col-lg-6 col-xl-6">
                   <div className="figContainer">
                     <img
                       src={Images.Ecommerce}
@@ -157,7 +157,7 @@ export default function LandingHome({ scrollTop }) {
                     <h2>Ecommerce</h2>
                   </div>
                 </div>
-                <div className="col-md-4 col-6">
+                <div className="col-md-4 col-12 col-lg-6 col-xl-6">
                   <div className="figContainer">
                     <img
                       src={Images.Branding}
@@ -167,7 +167,7 @@ export default function LandingHome({ scrollTop }) {
                     <h2>Branding</h2>
                   </div>
                 </div>
-                <div className="col-md-4 col-6">
+                <div className="col-md-4 col-12 col-lg-6 col-xl-6">
                   <div className="figContainer">
                     <img src={Images.SEO} alt="SEO" className="img-fluid" />
                     <h2>SEO Identity</h2>
@@ -208,7 +208,7 @@ export default function LandingHome({ scrollTop }) {
           <h1 className="mb-5 text-center pt-5">News</h1>
           <div>
             <div className="row">
-              <div className="col-lg-6">
+              <div className="col-lg-6 mb-3">
                 <div className="ratio ratio-16x9">
                   <iframe
                     src="https://www.youtube.com/embed/Lo9vLL6Tm4A"

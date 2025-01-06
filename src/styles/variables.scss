@@ -20,7 +20,8 @@ $font-stack: Times, sans-serif;
   color: #fff;
   font-weight: 700;
   font-size: 1.4rem;
-  padding: 10px 30px;
+  padding: 10px 20px;
+  text-wrap: nowrap;
   border-radius: 5rem;
   transition: all 0.3s ease;
   &:hover {
