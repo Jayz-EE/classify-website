@@ -1,5 +1,5 @@
 import ScrollAnimation from "react-animate-on-scroll";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Images from "../assets/images/image";
 import { BLOG_DATA } from "../data/blog_data";
 import BlogCard from "../components/blogCard";
@@ -8,7 +8,6 @@ import { Modal, Button } from "react-bootstrap";
 import "../styles/blogs.scss";
 
 const BlogsPage = () => {
-
   const [activeModalId, setActiveModalId] = useState(null);
 
   const handleClose = () => setActiveModalId(null);
@@ -129,6 +128,15 @@ const BlogsPage = () => {
               adopters and thought leaders in a region that largely relies
               on traditional methods of learning.
             </p>
+            <div className="d-flex justify-content-center">
+              <button
+                className="btn btn-secondary text-center"
+                style={{width: '150px'}}
+                onClick={handleClose}
+              >
+                Close
+              </button>
+            </div> 
           </Modal.Body>
         </Modal>
         {/* Modal 1 */}
@@ -317,6 +325,15 @@ const BlogsPage = () => {
               well. ClassifyLMS supports teachers by making their day-to-day
               lives easier. Join our upcoming online event :
             </p>
+            <div className="d-flex justify-content-center">
+              <button
+                className="btn btn-secondary text-center"
+                style={{width: '150px'}}
+                onClick={handleClose}
+              >
+                Close
+              </button>
+            </div> 
           </Modal.Body>
         </Modal>
         {/* Modal 3 */}
@@ -593,6 +610,15 @@ const BlogsPage = () => {
               we must be prepared to pay if learning is to thrive and if the
               youth of today is to be future-ready.
             </p>
+            <div className="d-flex justify-content-center">
+              <button
+                className="btn btn-secondary text-center"
+                style={{width: '150px'}}
+                onClick={handleClose}
+              >
+                Close
+              </button>
+            </div> 
           </Modal.Body>
         </Modal>
       </div>

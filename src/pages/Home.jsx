@@ -49,7 +49,7 @@ export default function LandingHome({ scrollTop }) {
                   <StyledButton button_name={"Learn More"} />
                 </Col>
               </Col>
-              <Col xs={12} sm={6} md={6} lg={6} id="tech_support">
+              <Col xs={12} sm={12} md={12} lg={6} id="tech_support">
                 <img src={Tech_Support} alt="Tech Support" />
               </Col>
             </Row>
