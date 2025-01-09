@@ -60,7 +60,8 @@ const Contact = () => {
     };
   
     try {
-      const response = await fetch("http://localhost:5000/send-email", {
+      // const response = await fetch("http://localhost:5000/send-email", {
+      const response = await fetch("http://172.16.30.42:5000/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -80,7 +81,7 @@ const Contact = () => {
         toast.error(errorData.message || "Failed to send message. Please try again later.");
       }
     } catch (error) {
-      toast.error("An unexpected error occurred.");
+      toast.error("An unexpected error occurred. error: "+ error);
     } finally {
       recaptchaRef.current.reset(); // Reset CAPTCHA after form submission
     }
