@@ -498,6 +498,12 @@
 // news-section
 .news-section {
     min-height: 60vh;
+    .news-title {
+        color: #014a65;
+        font-weight: 700;
+        font-size: clamp(3em, 2vw, 4em);
+        font-family: "Lora", serif;
+    }
 }
 
 // lms-benefits-section

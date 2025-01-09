@@ -205,7 +205,7 @@ export default function LandingHome({ scrollTop }) {
       </div>
       <div className="news-section container">
         <div className="pb-5">
-          <h1 className="mb-5 text-center pt-5">News</h1>
+          <h1 className="mb-5 text-center pt-5 news-title">News</h1>
           <div>
             <div className="row">
               <div className="col-lg-6 mb-3">

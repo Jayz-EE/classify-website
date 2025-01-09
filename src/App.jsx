@@ -12,6 +12,7 @@ import './styles/main.scss';
 import Footer from './components/footer.jsx';
 
 function App() {
+
   return (
     <BrowserRouter>
         <NavBarTop />

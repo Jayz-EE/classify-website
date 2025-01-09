@@ -135,7 +135,7 @@ export default function Products() {
 
             {/* Tab Section */}
             <div className="lms-tabs-section justify-content-center container-fluid">
-                <div className="col-md-1 col-lg-1 col-xl-1 col-sm-12 col-xs-12 icons-container">
+                <div className="col-md-12 col-lg-1 col-xl-1 col-sm-12 col-xs-12 icons-container">
                     {Object.keys(tabContent).map((tabKey, index) => (
                         <div
                             key={index}

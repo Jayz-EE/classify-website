@@ -18,7 +18,7 @@ import Partner from "./Partner.png";
 import Technology from "./Technology.png";
 import Customer from "./Customer.png";
 import moodle from "./moodle.png";
-import Admission from "./Admission.png";
+import Admission from "./Admission.jpg";
 import RMS2 from "./RMS2.png";
 import Finance from "./Finance.png";
 import Analytics from "./Analytics.png";

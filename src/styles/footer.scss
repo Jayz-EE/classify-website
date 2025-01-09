@@ -12,15 +12,32 @@
     color: $lights;
     background-color: $secondary;
 
+    .copy-icon {
+      font-size: 1.2rem;
+      color: #007bff;
+      &:hover {
+        color: #0056b3;
+      }
+    }
+
     h1 {
       font-size: 3em;
       font-weight: 700;
       padding-bottom: 1.8rem;
     }
 
+    .demo-title-2 {
+      font-size: clamp(1rem, 2vw, 1.5rem);
+      max-width: 40%;
+    }
+
     @media (max-width: 700px) {
       h1 {
         font-size: 2em;
+      }
+
+      .demo-title-2 {
+        max-width: 90%;
       }
     }
 
@@ -72,4 +89,3 @@
     }
   }
 }
-

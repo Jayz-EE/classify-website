@@ -53,7 +53,7 @@ export default function NavBarTop() {
                             to="/About"
                             onClick={() => { scrollToTop(); handleLinkClick(); }}
                         >
-                            About
+                            About Us
                         </Link>
                         <Link
                             className={`nav-link text-center ${isActive('/Blogs') ? 'active fw-bold' : ''}`}

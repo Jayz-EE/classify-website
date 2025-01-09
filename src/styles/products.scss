@@ -42,6 +42,7 @@
             width: 90%;
             font-weight: 650;
             font-family: Montserrat, sans-serif;
+            animation: fadeInDown 1s ease-in-out;
         }
 
         .hero-section-title::first-letter {
@@ -60,6 +61,12 @@
             color: #cdf1fe;
             width: 90%;
             text-align: justify;
+            opacity: 0;
+            animation: fadeInUp 1s ease-in-out 0.5s forwards;
+        }
+        .styled_button {
+            opacity: 0;
+            animation: fadeInLeft 1s ease-in-out 1s forwards;
         }
     }
 
@@ -97,7 +104,39 @@
             }
         }
     }
+}
 
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translatex(10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translatex(0);
+    }
 }
 
 @media (max-width: 900px) {
@@ -394,6 +433,7 @@
 
         img {
             max-width: 100%;
+            border-radius: 50px;
             height: auto;
             max-height: 60%;
             object-fit: contain;
@@ -425,12 +465,13 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 770px) {
     .lms-tabs-section .tabs-icons {
         flex-direction: row;
     }
     .lms-tabs-section .icons-container {
         flex-direction: row;
+        flex-wrap: nowrap;
     }
     .lms-tabs-section {
         flex-direction: column;

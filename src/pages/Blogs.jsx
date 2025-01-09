@@ -131,7 +131,7 @@ const BlogsPage = () => {
             <div className="d-flex justify-content-center">
               <button
                 className="btn btn-secondary text-center"
-                style={{width: '150px'}}
+                style={{width: '150px', background: "#0d6281", color: 'azure'}}
                 onClick={handleClose}
               >
                 Close
@@ -327,8 +327,8 @@ const BlogsPage = () => {
             </p>
             <div className="d-flex justify-content-center">
               <button
-                className="btn btn-secondary text-center"
-                style={{width: '150px'}}
+                className="btn text-center"
+                style={{width: '150px', background: "#0d6281", color: 'azure'}}
                 onClick={handleClose}
               >
                 Close
@@ -613,7 +613,7 @@ const BlogsPage = () => {
             <div className="d-flex justify-content-center">
               <button
                 className="btn btn-secondary text-center"
-                style={{width: '150px'}}
+                style={{width: '150px', background: "#0d6281", color: 'azure'}}
                 onClick={handleClose}
               >
                 Close
